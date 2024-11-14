@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Mostrar el contenido principal al hacer clic en "Entrar"
     document.getElementById('enter-button').addEventListener('click', () => {
