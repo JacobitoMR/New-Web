@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Configuración del scroll suave para los enlaces de navegación
     const enlaces = document.querySelectorAll('nav a[href^="#"]');
