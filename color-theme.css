@@ -1,0 +1,78 @@
+
+/* Fondo y tipografía general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0044cc; /* Azul fuerte */
+    color: #ffffff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+    background-color: #000000; /* Negro */
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra en el encabezado */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Ajuste del contenido para header fijo */
+main {
+    margin-top: 80px;
+}
+
+/* Navegación dentro del encabezado */
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Amarillo suave */
+}
+
+/* Secciones */
+section {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #0044cc; /* Texto azul fuerte */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Animación de aparición para las secciones */
+.fade-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Botón "Volver arriba" */
+.boton-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 24px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.boton-arriba:hover {
+    background-color: #0044cc; /* Azul fuerte */
+}

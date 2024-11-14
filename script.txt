@@ -1,0 +1,22 @@
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Efecto de animación en cada sección al hacer scroll
+    const secciones = document.querySelectorAll('section');
+    const observerOptions = { threshold: 0.2 };
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, observerOptions);
+
+    secciones.forEach(seccion => observer.observe(seccion));
+
+    // Mostrar el botón "Volver arriba" al hacer scroll hacia abajo
+    const botonArriba = document.querySelector('.boton-arriba');
+    window.addEventListener('scroll', () => {
+        botonArriba.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+});
