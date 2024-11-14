@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     // Variables para elementos de la pantalla de bienvenida y el contenido principal
     const enterButton = document.getElementById('enter-button');
